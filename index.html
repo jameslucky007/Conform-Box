@@ -3,101 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Confirm Box</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        .confirm-box {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: white;
-            padding: 20px;
-            width: 300px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-            text-align: center;
-        }
-
-        .confirm-box h2 {
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
-
-        .confirm-buttons {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .confirm-buttons button {
-            padding: 10px 15px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
-        .confirm-buttons .yes-btn {
-            background: #28a745;
-            color: white;
-        }
-
-        .confirm-buttons .no-btn {
-            background: #dc3545;
-            color: white;
-        }
-
-        /* Background Overlay */
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 999;
-        }
-    </style>
+    <title>JS Conform Box</title>
 </head>
 <body>
-
-    <h1>Hello World</h1>
-    <button onclick="showConfirm('Are you sure you want to proceed?')">Click Me</button>
-
-    <!-- Confirm Box -->
-    <div class="overlay" id="overlay"></div>
-    <div class="confirm-box" id="confirmBox">
-        <h2 id="confirmMessage"></h2>
-        <div class="confirm-buttons">
-            <button class="yes-btn" onclick="confirmAction(true)">Yes</button>
-            <button class="no-btn" onclick="confirmAction(false)">No</button>
-        </div>
-    </div>
-
-    <script>
-        function showConfirm(message) {
-            document.getElementById("confirmMessage").innerText = message;
-            document.getElementById("confirmBox").style.display = "block";
-            document.getElementById("overlay").style.display = "block";
-        }
-
-        function confirmAction(choice) {
-            if (choice) {
-                alert("You clicked YES!");
-            } else {
-                alert("You clicked NO!");
-            }
-            document.getElementById("confirmBox").style.display = "none";
-            document.getElementById("overlay").style.display = "none";
-        }
-    </script>
-
+    <h1> Hello World</h1>
+    
 </body>
+
+<script>
+
+
+
+
+
+
+</script>
 </html>
